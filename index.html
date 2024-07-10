@@ -22,70 +22,97 @@
         <section>
 
             <a href="">
-                <p>Home</p>
+                <button>Home</button>
             </a>
 
             <a href="">
-                <p>Videos Gameplay</p>
+                <button>Videos Gameplay</button>
             </a>
 
             <a href="">
-                <p>Login</p>
+                <button>Login</button>
             </a>
 
         </section>
 
-        <p class="song">Songs</p>
 
 
     </header>
 
-    <section class="intro">
+    <picture class="banner">
+    </picture>
 
+    <section class="nav-games">
+        <aside>
+            <a href="#valorant"><img src="./src/img/Valorant/Logo-vava.png" alt="Valorant"></a>
+            <a href="#cs2"><img src="./src/img/cs2/logo-cs.png" alt="Cs2"></a>
+            <a href="#diablo"><img src="./src/img/Diablo4/logo-diablo.webp" alt="Diablo IV"></a>
+            <a href="#dont"><img src="./src/img/dont_starve/Logo-don't-starve.webp" alt="Don't Starve"></a>
+        </aside>
     </section>
-
-    <aside>
-        <a href="#valorant"><img src="./src/img/Valorant/Logo-vava.png" alt="Valorant"></a>
-        <a href="#cs2"><img src="./src/img/cs 2/logo-cs.png" alt="Cs2"></a>
-        <a href="#diablo"><img src="./src/img/Diablo4/logo-diablo.webp" alt="Diablo IV"></a>
-        <a href="#dont"><img src="./src/img/dont starve/Logo-don't-starve.webp" alt="Don't Starve"></a>
-    </aside>
 
     <main>
         <section id="valorant">
+            <picture>
+                <source media="(max-width:480px )" srcset="./src/img/Valorant/img-vava-1-p.jpg" type="image/jpg">
+                <source media="(max-width:760px )" srcset="./src/img/Valorant/img-vava-1-m.jpg" type="image/jpg">
+                <img src="./src/img/Valorant/img-vava-1-g.jpg" alt="">
+            </picture>
             <article>
                 <h1>Valorant</h1>
-                <p>Jogue Valorant </p>
+                <p>Valorant é um jogo de tiro tático em primeira pessoa da Riot Games, onde equipes de cinco jogadores
+                    competem usando armas e habilidades únicas dos personagens.</p>
+                <button>Ver mais </button>
+            </article>
+
+         
+
+        </section>
+
+        <section id="cs2">
+            <picture>
+                <source media="(max-width:500px )" srcset="./src/img/cs2/img-cs2-P.jpg" type="image/jpg">
+                <source media="(max-width:1045px )" srcset="./src/img/cs2/img-cs2-M.jpg" type="image/jpg">
+                <img src="./src/img/cs2/img-cs2-G.jpg" alt="">
+            </picture>
+            <article>
+                <h1>Counter Strike 2</h1>
+                <p>CS2, ou Counter-Strike 2, é um jogo de tiro em primeira pessoa da Valve, onde duas equipes competem
+                    em missões de bombardeio e resgate de reféns, focando em estratégia e precisão.</p>
                 <button>Ver mais </button>
             </article>
             
         </section>
 
-        <section id="cs2">
-            <article>
-                <h1>Counter Strike 2</h1>
-                <p>Jogue CS 2 </p>
-                <button>Ver mais </button>
-            </article>
-        </section>
-
         <section id="diablo">
+            <picture>
+                <source media="(max-width:500px )" srcset="./src/img/Diablo4/img-diablo-P.jpg" type="image/jpg">
+                <source media="(max-width:1045px )" srcset="./src/img/Diablo4/img-diablo-M.jpg" type="image/jpg">
+                <img src="./src/img/Diablo4/img-diablo-G.jpg" alt="">
+            </picture>
             <article>
                 <h1>Diablo IV</h1>
-                <p>Jogue Diablo IV </p>
+                <p>Diablo 4 é um jogo de RPG de ação da Blizzard, onde os jogadores exploram um mundo sombrio e
+                    enfrentam hordas de inimigos, usando habilidades únicas de diferentes classes de personagens.</p>
                 <button>Ver mais </button>
             </article>
+            <picture> </picture>
         </section>
 
         <section id="dont">
             <picture>
-                <img src="" alt="">
+                <source media="(max-width:500px )" srcset="./src/img/dont_starve/img-dont-P.jpg" type="image/jpg">
+                <source media="(max-width:1045px )" srcset="./src/img/dont_starve/img-dont-M.jpg" type="image/jpg">
+                <img src="./src/img/dont_starve/img-dont-G.jpg" alt="">
             </picture>
             <article>
                 <h1>Don't Starve</h1>
-                <p>Jogue Don't Starve</p>
+                <p>Don't Starve é um jogo de sobrevivência da Klei Entertainment, onde os jogadores devem explorar um
+                    mundo sombrio e hostil, coletar recursos, fabricar itens e evitar perigos para sobreviver o máximo
+                    de tempo possível.</p>
                 <button>Ver mais </button>
             </article>
+            <picture> </picture>
         </section>
 
     </main>

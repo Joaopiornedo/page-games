@@ -2,178 +2,360 @@
 
 body {
     padding: 5px;
-    background-color: antiquewhite;
+    background-color: gray;
+    background-image: url(../img/fundo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    
 
 }
 
-/* Config Header: */
+/* Header: */
 
 header {
+    background-image: url(../img/fundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-columns: 2fr 10fr ;
     align-items: center;
     justify-content: center;
-    background-color: rgb(204, 0, 255);
-    height: 7em;
-    padding: 0em 5em;
-    margin: 0em 0em 2em 0em;
+    background-color: rgb(51, 51, 51);
+    height: 9em; 
 }
 
 header section {
-    background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.7em;
-    gap: 8em;
+    gap: 3em;
     height: 50%;
 }
 
 .logo {
-    background-color: black;
+    display: flex;
+    justify-content: end;
 }
 
 .logo img {
-    max-width: 80px;
+    max-width: 50%;
+}
+button {
+    font-size: 0.6em;
+    width: 10em;
+    height: 1.5em;
+    background-color: transparent;
+    border-radius: 20px;
+    border: solid gray 3px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.548);
+    color: gray;
+    transition: 0.5s;
 }
 
-.song {
-    text-align: center;
+button:hover {
+    transform: scale(1.1);
+    border: solid white 3px;
+    box-shadow: 0px 5px 15px white;
+    color: white;
+
 }
 
-.intro {
-    background-image: url(../img/fundo-intro/fundo-1.jpg);
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    background-image: url(../img/fundo-intro/fundo-1-G.jpg);
+    background-position: center ;
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: darkgreen;
-    height: 65em;
-    text-align: center;
-    align-content: center;
-
-}
-
-@keyframes intro {
-    0% {
-        background-image: url(../img/fundo-intro/fundo-1.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-    }
-
-    50% {
-        background-image: url(../img/fundo-intro/fundo-2.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-    }
-
-    100% {
-        background-image: url(../img/fundo-intro/fundo-3.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-    }
-
+    height: 650px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 /* Config Aside: */
+.nav-games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 aside {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15em;
-    background-color: grey;
-    height: 10em;
-    margin: 0em 0em 20em 0em;
-
+    gap: 10em;
+    background-color: rgba(19, 19, 19, 0.500);
+    height: 7em;
+    width: 70%;
+    margin: 0em 0em 5em 0em;
+    border-radius: 20px;
 
 }
 
 aside img {
-    width: 120px;
+    max-width: 80px;
+    transition: 0.5s;
+}
+
+aside img:hover {
+    transform: scale(1.1);
 }
 
 /* Config Main: */
 
 main {
-
-    background-color: rgb(254, 0, 152);
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5em 0em;
+    background-color: rgba(0, 0, 0, 0.322);
+    border-radius: 20px;
 }
 
 #valorant {
+    background-color: rgba(255, 255, 255, 0.200);
+    border-radius: 20px;
     display: grid;
-    grid-template-columns: 1fr 3.4fr;
-    background-color: darkcyan;
-    height: 900px;
-    max-width: 100%;
-    margin: auto;
-    color: white;
-    text-align: center;
-    align-items: center;
-    font-size: 3.5em;
-    /* animation: img-vava alternate 10s infinite; */
-    background-image: url(../img/Valorant/img-vava-3.jpg);
-    background-position: center right;
-    background-repeat: no-repeat;
-    
+    grid-template-columns: 1fr 3fr;
+    height: 600px;
+
+}
+#valorant img{
+    border-radius: 20px 20px 0px 0px;
 }
 
-@keyframes img-vava {
-    0% {
-        background-image: url(../img/Valorant/img-vava-1.jpg);
-        background-position: center right;
-        background-repeat: no-repeat;
-        
-    }
+#valorant article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
 
-    50% {
-        background-image: url(../img/Valorant/img-vava-2.jpg);
-        background-position: center right;
-        background-repeat: no-repeat;
-    }
+#valorant article h1 {
+    color: white;
+    font-size: 3.5em;
+}
 
-    100% {
-        background-image: url(../img/Valorant/img-vava-3.jpg);
-        background-position: center right;
-        background-repeat: no-repeat;
+#valorant article p {
+    color: white;
+    font-size: 1.5em;
+    padding: 20px;
+}
 
-    }
-
+#valorant article button {
+    font-size: 1.5em;
 }
 
 
 #cs2 {
-    background-color: aquamarine;
-    height: 800px;
-    margin: auto;
+    background-color: rgba(255, 255, 255, 0.200);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 600px;
 
 }
+
+#cs2 article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+#cs2 article h1 {
+    color: white;
+    font-size: 3.5em;
+}
+
+#cs2 article p {
+    color: white;
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+#cs2 article button {
+    font-size: 1.5em;
+}
+
+
 
 #diablo {
-    background-image: url(../img/Diablo4/diablo-1.webp);
-    background-position: center;
-    background-position: cover;
-    background-repeat: no-repeat;
-    background-color: darkcyan;
-    height: 900px;
-    max-width: 100%;
-    margin: auto;
+    background-color: rgba(255, 255, 255, 0.200);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 600px;
 
 }
 
-#diablo h1 p button {
-    z-index: 999999999999;
+#diablo article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+#diablo article h1 {
     color: white;
+    font-size: 3.5em;
+}
+
+#diablo article p {
+    color: white;
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+#diablo article button {
+    font-size: 1.5em;
 }
 
 
 #dont {
-    background-color: darkkhaki;
-    height: 800px;
-    margin: auto;
+    background-color: rgba(255, 255, 255, 0.200);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 600px;
 
 }
 
+#dont article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+#dont article h1 {
+    color: white;
+    font-size: 3.5em;
+}
+
+#dont article p {
+    color: white;
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+#dont article button {
+    font-size: 1.5em;
+}
+
+
+
+
+@keyframes img-vava {
+    0% {
+        background-image: url(../img/Valorant/img-vava-1.jpg);
+        background-size: cover;
+        background-position: center;
+
+
+    }
+
+    50% {
+        background-image: url(../img/Valorant/img-vava-2.jpg);
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    100% {
+        background-image: url(../img/Valorant/img-vava-3.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+
+@keyframes img-cs2 {
+    0% {
+        background-image: url(../img/cs2/img-cs2-1.jpg);
+        background-size: cover;
+        background-position: center;
+
+
+    }
+
+    50% {
+        background-image: url(../img/cs2/img-cs2-2.jpg);
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    100% {
+        background-image: url(../img/cs2/img-cs2-3.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+
+@keyframes img-diablo {
+    0% {
+        background-image: url(../img/Diablo4/img-diablo-1.jpg);
+        background-size: cover;
+        background-position: center;
+
+
+    }
+
+    50% {
+        background-image: url(../img/Diablo4/img-diablo-2.jpg);
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    100% {
+        background-image: url(../img/Diablo4/img-diablo-3.webp);
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+
+@keyframes img-dont {
+    0% {
+        background-image: url(../img/dont_starve/img-dont-1.jpg);
+        background-size: cover;
+        background-position: center;
+
+
+    }
+
+    50% {
+        background-image: url(../img/dont_starve/img-dont-2.jpg);
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    100% {
+        background-image: url(../img/dont_starve/img-dont-3.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+
+
+
+
 footer {
-    background-color: cyan;
+    background-color: rgba(0, 0, 0, 0.700);
     height: 7em;
 }

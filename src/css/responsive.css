@@ -1,0 +1,319 @@
+@media (max-width:328px) {
+    header {
+        background-image: url(../img/fundo.jpg);
+        background-position: center left;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+    }
+
+    header section {
+        flex-direction: column;
+        font-size: 1em;
+        gap: 1.5em;
+        height: 100%
+    }
+
+    .logo img {
+        max-width: 80%;
+    }
+
+    button {
+        height: 2.5em;
+        border: solid gray 1px;
+    }
+
+    .banner {
+        
+        background-image: url(../img/fundo-intro/fundo-1-pp.jpg);
+       
+    }
+
+    .nav-games {
+
+        height: 150px;
+
+    }
+
+    aside {
+        flex-wrap: wrap;
+        gap: 2em;
+        width: 100%;
+        margin: 10px;
+    }
+
+    aside img {
+        max-width: 40px;
+    }
+
+    #valorant {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+
+    }
+
+    #valorant article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0em;
+    }
+
+    #valorant article h1 {
+        font-size: 1.5em;
+    }
+
+    #valorant article p {
+        font-size: 1em;
+    }
+
+    #valorant article button {
+        font-size: 0.7em;
+    }
+
+    #cs2 {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+
+    }
+
+    #cs2 article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0em;
+    }
+
+    #cs2 article h1 {
+        font-size: 1.5em;
+    }
+
+    #cs2 article p {
+        font-size: 1em;
+    }
+
+    #cs2 article button {
+        font-size: 0.7em;
+    }
+
+    #diablo {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+
+    }
+
+    #diablo article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0em;
+    }
+
+    #diablo article h1 {
+        font-size: 1.5em;
+    }
+
+    #diablo article p {
+        font-size: 1em;
+    }
+
+    #diablo article button {
+        font-size: 0.7em;
+    }
+
+    #dont {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+
+    }
+
+    #dont article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0em;
+    }
+
+    #dont article h1 {
+        font-size: 1.5em;
+    }
+
+    #dont article p {
+        font-size: 1em;
+    }
+
+    #dont article button {
+        font-size: 0.7em;
+    }
+
+    footer {
+        height: 2em;
+    }
+}
+
+@media (min-width:329px) and (max-width:480px) {
+    header {
+        background-image: url(../img/fundo.jpg);
+        background-position: center left;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+    }
+
+    header section {
+        flex-direction: column;
+        font-size: 1em;
+        gap: 1.5em;
+        height: 100%
+    }
+
+    .logo img {
+        max-width: 80%;
+    }
+
+    button {
+        height: 2.5em;
+        border: solid gray 1px;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    .nav-games {
+
+        height: 150px;
+
+    }
+
+    aside {
+        flex-wrap: wrap;
+        gap: 2em;
+        width: 100%;
+        margin: 10px;
+    }
+
+    aside img {
+        max-width: 40px;
+    }
+
+    #valorant {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+
+    }
+
+    #valorant article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0em;
+    }
+
+    #valorant article h1 {
+        font-size: 1.5em;
+    }
+
+    #valorant article p {
+        font-size: 1em;
+    }
+
+    #valorant article button {
+        font-size: 0.7em;
+    }
+
+    #cs2 {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+
+    }
+
+    #cs2 article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0em;
+    }
+
+    #cs2 article h1 {
+        font-size: 1.5em;
+    }
+
+    #cs2 article p {
+        font-size: 1em;
+    }
+
+    #cs2 article button {
+        font-size: 0.7em;
+    }
+
+    #diablo {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+
+    }
+
+    #diablo article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0em;
+    }
+
+    #diablo article h1 {
+        font-size: 1.5em;
+    }
+
+    #diablo article p {
+        font-size: 1em;
+    }
+
+    #diablo article button {
+        font-size: 0.7em;
+    }
+
+    #dont {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+
+    }
+
+    #dont article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0em;
+    }
+
+    #dont article h1 {
+        font-size: 1.5em;
+    }
+
+    #dont article p {
+        font-size: 1em;
+    }
+
+    #dont article button {
+        font-size: 0.7em;
+    }
+
+    footer {
+        height: 2em;
+    }
+}
