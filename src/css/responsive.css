@@ -2,31 +2,31 @@
     header {
         background-image: url(../img/fundo.jpg);
         background-position: center left;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: none;
+        height: 7em;
+
 
     }
 
-    header section {
-        flex-direction: column;
+    header .botoes {
         font-size: 1em;
-        gap: 1.5em;
-        height: 100%
+        gap: 0.5em;
+        height: 100%;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
     }
 
     .logo img {
-        max-width: 80%;
+        max-width: 20%;
     }
 
     button {
-        height: 2.5em;
-        border: solid gray 1px;
-    }
-
-    .banner {
-        
-        background-image: url(../img/fundo-intro/fundo-1-pp.jpg);
-       
+        font-size: 0.6em;
+        width: 8em;
+        height: 3em;
     }
 
     .nav-games {
@@ -161,31 +161,29 @@
 
 @media (min-width:329px) and (max-width:480px) {
     header {
-        background-image: url(../img/fundo.jpg);
         background-position: center left;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-
+        grid-template-columns: none;
+        height: 7em;
     }
 
-    header section {
-        flex-direction: column;
+    header .botoes {
         font-size: 1em;
-        gap: 1.5em;
-        height: 100%
+        gap: 0.5em;
+        height: 100%;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
     }
 
     .logo img {
-        max-width: 80%;
+        max-width: 20%;
     }
 
     button {
-        height: 2.5em;
-        border: solid gray 1px;
-    }
-
-    .banner {
-        height: 200px;
+        width: 8em;
+        height: 3em;
     }
 
     .nav-games {
@@ -205,11 +203,24 @@
         max-width: 40px;
     }
 
+    main {
+        gap: 3em 0em;
+    }
+
+    #valorant img {
+        border-radius: 20px;
+        border: solid 2px;
+        margin: 10px;
+        max-width: 93%;
+    }
+
     #valorant {
         display: flex;
         flex-direction: column;
+        align-items: center;
         height: 400px;
-
+        gap: 1em;
+        margin: 20px;
     }
 
     #valorant article {
@@ -217,7 +228,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 0em;
+        gap: 0.5em;
     }
 
     #valorant article h1 {
@@ -226,17 +237,28 @@
 
     #valorant article p {
         font-size: 1em;
+        padding: 5px;
+
     }
 
     #valorant article button {
         font-size: 0.7em;
     }
 
+    #cs2 img {
+        border-radius: 20px;
+        border: solid 2px;
+        margin: 10px;
+        max-width: 93%;
+    }
+
     #cs2 {
         display: flex;
         flex-direction: column;
+        align-items: center;
         height: 400px;
-
+        gap: 1em;
+        margin: 20px;
     }
 
     #cs2 article {
@@ -252,6 +274,7 @@
     }
 
     #cs2 article p {
+        text-align: center;
         font-size: 1em;
     }
 
@@ -259,11 +282,20 @@
         font-size: 0.7em;
     }
 
+    #diablo img {
+        border-radius: 20px;
+        border: solid 2px;
+        margin: 10px;
+        max-width: 93%;
+    }
+
     #diablo {
         display: flex;
         flex-direction: column;
+        align-items: center;
         height: 400px;
-
+        gap: 1em;
+        margin: 20px;
     }
 
     #diablo article {
@@ -279,6 +311,7 @@
     }
 
     #diablo article p {
+        text-align: center;
         font-size: 1em;
     }
 
@@ -286,11 +319,20 @@
         font-size: 0.7em;
     }
 
+    #dont img {
+        border-radius: 20px;
+        border: solid 2px;
+        margin: 10px;
+        max-width: 93%;
+    }
+
     #dont {
         display: flex;
         flex-direction: column;
+        align-items: center;
         height: 400px;
-
+        gap: 1em;
+        margin: 20px;
     }
 
     #dont article {
@@ -306,6 +348,7 @@
     }
 
     #dont article p {
+        text-align: center;
         font-size: 1em;
     }
 
@@ -314,6 +357,125 @@
     }
 
     footer {
-        height: 2em;
+        height: 5em;
     }
 }
+
+@media (min-width:481px) and (max-width:900px) {
+    header {
+        background-position: center left;
+    }
+
+    header .botoes {
+        font-size: 1.2em;
+        gap: 0.5em;
+    }
+
+    .logo img {
+        max-width: 80%;
+    }
+
+    .nav-games {
+        height: 150px;
+    }
+
+    aside {
+        flex-wrap: wrap;
+        gap: 4em;
+        width: 100%;
+        margin: 10px;
+    }
+
+    aside img {
+        max-width: 50px;
+    }
+    
+    #valorant {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #valorant article h1 {
+        font-size: 2.5em;
+    }
+
+    #valorant article p {
+        font-size: 1.3em;
+    }
+
+    #valorant article button {
+        font-size: 1em;
+    }
+
+    #cs2{
+        display: flex;
+        flex-direction: column;
+    }
+    #cs2 article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    #cs2 article h1 {
+        font-size: 2.5em;
+    }
+
+    #cs2 article p {
+        font-size: 1.3em;
+    }
+
+    #cs2 article button {
+        font-size: 1em;
+    }
+
+    #diablo{
+        display: flex;
+        flex-direction: column;
+    }
+    #diablo article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    #diablo article h1 {
+        font-size: 2.5em;
+    }
+
+    #diablo article p {
+        font-size: 1.3em;
+    }
+
+    #diablo article button {
+        font-size: 1em;
+    }
+    #dont{
+        display: flex;
+        flex-direction: column;
+    }
+    #dont article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    #dont article h1 {
+        font-size: 2em;
+    }
+
+    #dont article p {
+        font-size: 1.3em;
+    }
+
+    #dont article button {
+        font-size: 1em;
+    }
+}
+

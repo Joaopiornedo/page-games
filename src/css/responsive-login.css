@@ -1,0 +1,27 @@
+@media (max-width:320px) {
+    main {
+        max-width: 300px;
+        max-height: 350px;
+    }
+    input{
+        font-size: 1.3em;
+    }
+
+    button {
+        font-size: 0.9em;
+        width: 110px;
+    }
+}@media (min-width:321px) and (max-width:530px) {
+    main {
+        max-width: 300px;
+        max-height: 350px;
+    }
+    input{
+        font-size: 1.3em;
+    }
+
+    button {
+        font-size: 0.9em;
+        width: 110px;
+    }
+}

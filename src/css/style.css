@@ -26,9 +26,10 @@ header {
     justify-content: center;
     background-color: rgb(51, 51, 51);
     height: 9em; 
+    margin: 2em 0em;
 }
 
-header section {
+header .botoes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,32 +52,18 @@ button {
     height: 1.5em;
     background-color: transparent;
     border-radius: 20px;
-    border: solid gray 3px;
+    border: solid gray 1px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.548);
     color: gray;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 button:hover {
     transform: scale(1.1);
-    border: solid white 3px;
+    border: solid white 1px;
     box-shadow: 0px 5px 15px white;
     color: white;
-
-}
-
-/* Banner */
-.banner {
-    display: flex;
-    justify-content: center;
-    background-color: aquamarine;
-    background-image: url(../img/fundo-intro/fundo-1-G.jpg);
-    background-position: center ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 650px;
-    border-radius: 20px 20px 0px 0px;
 }
 
 /* Config Aside: */
@@ -91,17 +78,17 @@ aside {
     justify-content: center;
     align-items: center;
     gap: 10em;
-    background-color: rgba(19, 19, 19, 0.500);
+    background-color: rgba(255, 255, 255, 0.100);
     height: 7em;
     width: 70%;
-    margin: 0em 0em 5em 0em;
+    margin: 5em 0em 5em 0em;
     border-radius: 20px;
 
 }
 
 aside img {
     max-width: 80px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 aside img:hover {
@@ -114,20 +101,23 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5em 0em;
-    background-color: rgba(0, 0, 0, 0.322);
+    background-color: rgba(0, 0, 0, 0.300);
     border-radius: 20px;
 }
 
 #valorant {
-    background-color: rgba(255, 255, 255, 0.200);
+    background-color: rgba(255, 255, 255, 0.100);
     border-radius: 20px;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    height: 600px;
-
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    padding: 2em;
 }
 #valorant img{
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px ;
+    max-width: 100%;
 }
 
 #valorant article {
@@ -141,25 +131,33 @@ main {
 #valorant article h1 {
     color: white;
     font-size: 3.5em;
+    text-align: center;
 }
 
 #valorant article p {
     color: white;
     font-size: 1.5em;
-    padding: 20px;
+    padding: 10px;
+    text-align: center;
 }
 
 #valorant article button {
     font-size: 1.5em;
 }
 
-
+#cs2 img{
+    border-radius: 20px ;
+    max-width: 100%;
+}
 #cs2 {
-    background-color: rgba(255, 255, 255, 0.200);
+    background-color: rgba(255, 255, 255, 0.100);
     border-radius: 20px;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    height: 600px;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    padding: 2em;
 
 }
 
@@ -174,12 +172,14 @@ main {
 #cs2 article h1 {
     color: white;
     font-size: 3.5em;
+    text-align: center;
 }
 
 #cs2 article p {
     color: white;
     font-size: 1.5em;
-    padding: 20px;
+    padding: 10px;
+    text-align: center;
 }
 
 #cs2 article button {
@@ -187,14 +187,19 @@ main {
 }
 
 
-
+#diablo img{
+    border-radius: 20px ;
+    max-width: 100%;
+}
 #diablo {
-    background-color: rgba(255, 255, 255, 0.200);
+    background-color: rgba(255, 255, 255, 0.100);
     border-radius: 20px;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    height: 600px;
-
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    padding: 2em;
 }
 
 #diablo article {
@@ -208,26 +213,33 @@ main {
 #diablo article h1 {
     color: white;
     font-size: 3.5em;
+    text-align: center;
 }
 
 #diablo article p {
     color: white;
     font-size: 1.5em;
-    padding: 20px;
+    padding: 10px;
+    text-align: center;
 }
 
 #diablo article button {
     font-size: 1.5em;
 }
 
-
+#dont img{
+    border-radius: 20px ;
+    max-width: 100%;
+}
 #dont {
-    background-color: rgba(255, 255, 255, 0.200);
+    background-color: rgba(255, 255, 255, 0.100);
     border-radius: 20px;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    height: 600px;
-
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    padding: 2em;
 }
 
 #dont article {
@@ -241,121 +253,20 @@ main {
 #dont article h1 {
     color: white;
     font-size: 3.5em;
+    text-align: center;
 }
 
 #dont article p {
     color: white;
     font-size: 1.5em;
-    padding: 20px;
+    padding: 10px;
+    text-align: center;
 }
 
 #dont article button {
     font-size: 1.5em;
 }
-
-
-
-
-@keyframes img-vava {
-    0% {
-        background-image: url(../img/Valorant/img-vava-1.jpg);
-        background-size: cover;
-        background-position: center;
-
-
-    }
-
-    50% {
-        background-image: url(../img/Valorant/img-vava-2.jpg);
-        background-size: cover;
-        background-position: center;
-
-    }
-
-    100% {
-        background-image: url(../img/Valorant/img-vava-3.png);
-        background-size: cover;
-        background-position: center;
-    }
-
-}
-
-@keyframes img-cs2 {
-    0% {
-        background-image: url(../img/cs2/img-cs2-1.jpg);
-        background-size: cover;
-        background-position: center;
-
-
-    }
-
-    50% {
-        background-image: url(../img/cs2/img-cs2-2.jpg);
-        background-size: cover;
-        background-position: center;
-
-    }
-
-    100% {
-        background-image: url(../img/cs2/img-cs2-3.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-
-}
-
-@keyframes img-diablo {
-    0% {
-        background-image: url(../img/Diablo4/img-diablo-1.jpg);
-        background-size: cover;
-        background-position: center;
-
-
-    }
-
-    50% {
-        background-image: url(../img/Diablo4/img-diablo-2.jpg);
-        background-size: cover;
-        background-position: center;
-
-    }
-
-    100% {
-        background-image: url(../img/Diablo4/img-diablo-3.webp);
-        background-size: cover;
-        background-position: center;
-    }
-
-}
-
-@keyframes img-dont {
-    0% {
-        background-image: url(../img/dont_starve/img-dont-1.jpg);
-        background-size: cover;
-        background-position: center;
-
-
-    }
-
-    50% {
-        background-image: url(../img/dont_starve/img-dont-2.jpg);
-        background-size: cover;
-        background-position: center;
-
-    }
-
-    100% {
-        background-image: url(../img/dont_starve/img-dont-3.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-
-}
-
-
-
-
 footer {
-    background-color: rgba(0, 0, 0, 0.700);
+    background-color: rgba(0, 0, 0, 0.300);
     height: 7em;
 }
